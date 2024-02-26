@@ -5,7 +5,7 @@ permalink: /how-it-started/
 excerpt: From cancelled choir practice to a charity fund in just a month, this project evolved faster than we could have ever imagined.
 excerpt-image: 20220302_134432.jpg
 ---
-<img class="cover-img" src="/assets/img/church-donations.jpg" alt="Donations at St. Andrew's" />
+<img class="cover-img" src={{ "/assets/img/church-donations.jpg" | relative_url }} alt="Donations at St. Andrew's" />
 
 
 __From cancelled choir practice on the day the war started to a charity fund in just a month, this project evolved faster than we could have ever imagined.__

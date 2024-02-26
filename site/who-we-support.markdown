@@ -56,7 +56,7 @@ Examples of the items that are urgently needed
 - Basic white goods (most mothers cannot afford to buy even most basic kitchen appliances – they live with broken or very old electric equipment; often top of the list are small freezers, fridges, blenders, juicers, or multicooker
 - Notebooks and tablets/ipads - most children are bed ridden and one of the few things they can do is use technology to keep them stimulated.
 
-![Pushchair for Karolina](/assets/img/chair.jpg)
+![Pushchair for Karolina]({{ "/assets/img/chair.jpg" | relative_url }})
 
-A padded pushchair which is large enough for [Karolina](/families/karolina) is needed.  This
+A padded pushchair which is large enough for [Karolina]({{ "/families/karolina" | relative_url }}) is needed.  This
 "dream" pushchair is around £800, a price unimaginable for Karolina’s mom
