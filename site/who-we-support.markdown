@@ -4,15 +4,35 @@ title: The people we support
 permalink: /people-we-support/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Direct Support for Ukraine is working with Yuliya now.  With your donations we hope to be able to widen our support to others like her.
 
 
-[jekyll-organization]: https://github.com/jekyll
+### YULIYA IN KYIV
+<!-- todo: image -->
+Caring for children and young people with special needs who cannot flee the war.
+
+An Introduction from Nataliya
+
+Yuliya has been supporting children and young adults with very special needs in Ukraine for several years now. Their life has always been difficult, but current war made things almost impossible (how can a single mum move a 14 year old bed ridden boy to a bomb shelter on short notice?). The other day we were having a late evening call (she had spent whole day trying to find adult nappies in different humanitarian aid centres – all to no avail) and she promised to write more about “her” children later after the conversation (I do notice the tenderness in her voice as she says "her"). Late at night, I get a brief message that there were more rockets flying by Yuliya’s house and she had to organize a sleeping space for herself and her daughter in the corridor. Next day, despite broken sleep, she sends me a long list of needs of families she supports… and now it is my turn to loose sleep… because of everything these families are going through.
+
+
+I hope we can help.
+
+YULIYA
+
+Yuliya Lamash is a volunteer supporting almost 60 children and young adults with severe disabilities who grow up in single parent households. These 6- to 19-year-olds suffer a number of medical conditions such as cerebral palsy, epilepsy and genetic disorders. Almost all the children are bed ridden, need nappies every day, eat blended or specialized food, some of them also need a gluten free or a dairy free diet. The majority of them need medications to support them, physiotherapy and everyday care help as they cannot look after themselves. Many of these children are behind their peers in physical development, their weight and height are well below the average age standards. In all but one family, fathers are not present (mothers are raising children on their own).
+
+One impact of the war has been that sponsors and other funding sources are no longer available. She needs our support to be able to buy the essential things the children need such as nappies, medicines, special nutritional foods and clothing.
+
+## The families Yuliya supports
+
+<br>
+
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = default_paths | where_exp:"path", "path contains 'families'" -%}
+	          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+- [{{my_page.title}}]({{my_page.url}})<br>
+            {%- endif -%}
+          {%- endfor -%}
