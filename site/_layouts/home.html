@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="px-4 py-5 my-2 text-center">
+<div class="px-4 py-5 my-5 text-center">
   <img class="d-block mx-auto mb-4" src="/assets/img/logo-header.png" alt="" >
   <h1 class="display-5 fw-bold text-body-emphasis">SUPPORTING THOSE WHO HELP THE MOST VULNERABLE AFFECTED BY WAR IN UKRAINE</h1>
   <div class="col-lg-6 mx-auto">
@@ -12,15 +12,13 @@ layout: default
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 g-3">
-      {%- assign default_paths = site.pages | map: "path" -%}
-      {%- assign page_paths = site.header_pages | default: default_paths -%}
-
+      {%- assign page_paths = site.excerpt_pages -%}
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.excerpt -%}
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top p-1" width="100%" height="225" role="img" src="/assets/img/{{ my_page.excerpt-image }}" alt="{{ my_page.title }}"></img>
+            <img class="bd-placeholder-img card-img-top p-1" style="object-fit: contain;" width="100%" height="225" role="img" src="/assets/img/{{ my_page.excerpt-image }}" alt="{{ my_page.title }}"></img>
             <div class="card-body">
               <h5 class="card-title">{{ my_page.title }}</h5>
               <p class="card-text">{{ my_page.excerpt }}</p>
