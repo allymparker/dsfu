@@ -33,10 +33,10 @@ One impact of the war has been that sponsors and other funding sources are no lo
 	          {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
-- [{{my_page.title}}]({{my_page.url}})<br>
+- [{{my_page.title}}]({{my_page.url | relative_url}})<br>
             {%- endif -%}
           {%- endfor -%}
-
+<br>
 
 
 ## What is needed?
