@@ -1,33 +1,39 @@
 ---
 layout: default
 ---
+<div class="px-4 py-5 my-2 text-center">
+  <img class="d-block mx-auto mb-4" src="/assets/img/logo-header.png" alt="" >
+  <h1 class="display-5 fw-bold text-body-emphasis">SUPPORTING THOSE WHO HELP THE MOST VULNERABLE AFFECTED BY WAR IN UKRAINE</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Our current focus is caring for children and young people with special needs who cannot flee the war.</p>
+    <p class="mb-2">Funds from traditional, larger charities take weeks or months to get where they’re needed. We are in the unique position to be working directly with volunteer humanitarian aid workers on the ground right now, getting them the funds they need in days.</p>
+  </div>
+</div>
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 g-3">
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.excerpt -%}
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top p-1" width="100%" height="225" role="img" src="/assets/img/{{ my_page.excerpt-image }}" alt="{{ my_page.title }}"></img>
+            <div class="card-body">
+              <h5 class="card-title">{{ my_page.title }}</h5>
+              <p class="card-text">{{ my_page.excerpt }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{{ my_page.url }}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  {{ content }}
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
         {%- endif -%}
-      </li>
       {%- endfor -%}
-    </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
-
+    </div>
 </div>
