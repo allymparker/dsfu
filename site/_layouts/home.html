@@ -2,8 +2,9 @@
 layout: default
 ---
 <div class="px-4 py-5 my-5 text-center">
-  <img class="d-block mx-auto mb-4" src="{{ "/assets/img/logo-header.png" | relative_url }}" alt="" >
-  <h1 class="display-5 fw-bold text-body-emphasis">SUPPORTING THOSE WHO HELP THE MOST VULNERABLE AFFECTED BY WAR IN UKRAINE</h1>
+  <img class="d-block mx-auto mb-4 object-fit-cover" height="600" src="{{ "/assets/img/home.jpg" | relative_url }}" alt="" >
+
+  <h1 class="display-2 fw-bold text-body-emphasis">SUPPORTING THOSE WHO HELP THE MOST VULNERABLE AFFECTED BY WAR IN UKRAINE</h1>
   <div class="col-lg-6 mx-auto">
     <p class="lead mb-4">Our current focus is caring for children and young people with special needs who cannot flee the war.</p>
     <p class="mb-2">Funds from traditional, larger charities take weeks or months to get where they’re needed. We are in the unique position to be working directly with volunteer humanitarian aid workers on the ground right now, getting them the funds they need in days.</p>
@@ -18,13 +19,13 @@ layout: default
         {%- if my_page.excerpt -%}
         <div class="col">
           <div class="card shadow-sm">
-            <img class="bd-placeholder-img card-img-top p-1" style="object-fit: contain;" width="100%" height="225" role="img" src="{{ "/assets/img/" | append: my_page.excerpt-image | relative_url }}" alt="{{ my_page.title }}"></img>
+            <img class="bd-placeholder-img card-img-top p-1 object-fit-cover" width="100%" height="225" role="img" src="{{ "/assets/img/" | append: my_page.excerpt-image | relative_url }}" alt="{{ my_page.title }}"></img>
             <div class="card-body">
               <h5 class="card-title">{{ my_page.title }}</h5>
               <p class="card-text">{{ my_page.excerpt }}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="{{ my_page.url }}" class="btn btn-primary">Read More</a>
+                  <a href="{{ my_page.url }}" class="btn btn-dark rounded-0">Read More</a>
                 </div>
               </div>
             </div>
@@ -34,4 +35,12 @@ layout: default
         {%- endif -%}
       {%- endfor -%}
     </div>
+</div>
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-2 fw-bold text-body-emphasis text-uppercase">Get the news</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Sign-up to "Look through the window"</p>
+    <p class="mb-2">We have a newsletter which we use as a window. It is a window through which we can bring news to you on how your donations are used and to share something of life in Ukraine.  It is also a window through which you can learn about what is going on nearer to home in support of Ukraine and its people. Please sign up to look through this window.</p>
+    <a class="btn btn-dark rounded-0" target="_blank" href="http://eepurl.com/h4mrHj">Link to the Newsletter</a>
+  </div>
 </div>
