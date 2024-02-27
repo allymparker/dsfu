@@ -1,7 +1,5 @@
----
-layout: default
----
-<div class="px-4 py-5 my-5 text-center">
+
+<div class="px-4 mb-5 text-center">
   <img class="d-block mx-auto mb-4 object-fit-cover" height="600" src="{{ "/assets/img/home.jpg" | relative_url }}" alt="" >
 
   <h1 class="display-2 fw-bold text-body-emphasis">SUPPORTING THOSE WHO HELP THE MOST VULNERABLE AFFECTED BY WAR IN UKRAINE</h1>
@@ -25,7 +23,7 @@ layout: default
               <p class="card-text">{{ my_page.excerpt }}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="{{ my_page.url }}" class="btn btn-dark rounded-0">Read More</a>
+                  <a href="{{ my_page.url | relative_url }}" class="btn btn-dark rounded-0">Read More</a>
                 </div>
               </div>
             </div>

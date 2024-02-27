@@ -1,8 +1,11 @@
-<div class="card mb-3 mx-2">
+<div class="card my-5 mx-2">
   <div class="row g-0 {% if include.right %}flex-row-reverse{% endif %}">
     <div class="col-md-6">
-
-      <img src="{{"/assets/img/" | append: include.image | relative_url }}" class="img-fluid {% if include.right %}rounded-end{% else %}rounded-start{% endif %}" alt="{{ include.image-alt }}">
+      <img
+        src="{{"/assets/img/" | append: include.image | relative_url }}"
+        style="height: {{ include.height | default: '440'}}px; object-position: 50% 50%;"
+        class="w-100 object-fit-cover img-fluid {% if include.right %}rounded-end{% else %}rounded-start{% endif %}"
+        alt="{{ include.image-alt }}">
     </div>
     <div class="col-md-6">
       <div class="card-body">
