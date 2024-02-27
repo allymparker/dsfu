@@ -41,7 +41,7 @@ header_pages:
 excerpt_pages:
   - what-we-do.markdown
   - how-it-started.markdown
-  - our-team.markdown
+  - team/index.markdown
   - st-andrews-church.markdown
   - contact.markdown
 

@@ -22,10 +22,7 @@ Interested…. ?
 
 Read more of the story below.
 
-[Nataliya's Story of the Start]({{"/team/nataliya" | relative_url}})
-
-[Jacqui's Story of the Start]({{"/team/jacqui" | relative_url}})
-
-[Our Team]({{"/team" | relative_url}})
-
-[St. Andrews Church]({{"/st-andrews-church" | relative_url}})
+<a class="btn btn-dark rounded-0 d-inline" href="{{"/team/nataliya" | relative_url}}">Nataliya's Story of the Start</a>
+<a class="btn btn-dark rounded-0 d-inline" href="{{"/team/jacqui" | relative_url}}">Jacqui's Story of the Start</a>
+<a class="btn btn-dark rounded-0 d-inline" href="{{"/team" | relative_url}}">Our Team</a>
+<a class="btn btn-dark rounded-0 d-inline" href="{{"/st-andrews-church" | relative_url}}">St. Andrews Church</a>

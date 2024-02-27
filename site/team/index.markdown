@@ -2,6 +2,8 @@
 layout: page
 title: Our Team
 permalink: /team
+excerpt: We all have jobs outside of this project but we are united by passion to support those helping others as fast as humanly possible.
+excerpt-image: 20220304_210745.jpg
 ---
 <div class="row row-cols-1 row-cols-md-3 g-4">
 {% for member in site.data.members %}
