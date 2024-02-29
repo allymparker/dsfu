@@ -32,7 +32,7 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - what-we-do.markdown
+  - what-we-do.html
   - who-we-support.markdown
   - about-us.markdown
   - donate.markdown
