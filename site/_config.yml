@@ -35,8 +35,8 @@ header_pages:
   - what-we-do.html
   - who-we-support.markdown
   - about-us.markdown
-  - donate.markdown
-  - contact.markdown
+  - donate.html
+  - contact.html
 
 excerpt_pages:
   - what-we-do.markdown
