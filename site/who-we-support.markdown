@@ -18,11 +18,7 @@ Yuliya has been supporting children and young adults with very special needs in 
 
 I hope we can help.
 
-YULIYA
 
-Yuliya Lamash is a volunteer supporting almost 60 children and young adults with severe disabilities who grow up in single parent households. These 6- to 19-year-olds suffer a number of medical conditions such as cerebral palsy, epilepsy and genetic disorders. Almost all the children are bed ridden, need nappies every day, eat blended or specialized food, some of them also need a gluten free or a dairy free diet. The majority of them need medications to support them, physiotherapy and everyday care help as they cannot look after themselves. Many of these children are behind their peers in physical development, their weight and height are well below the average age standards. In all but one family, fathers are not present (mothers are raising children on their own).
-
-One impact of the war has been that sponsors and other funding sources are no longer available. She needs our support to be able to buy the essential things the children need such as nappies, medicines, special nutritional foods and clothing.
 
 ## The families Yuliya supports
 
@@ -39,24 +35,3 @@ One impact of the war has been that sponsors and other funding sources are no lo
 <br>
 
 
-## What is needed?
-
-Examples of the items that are urgently needed
-
-- Adult nappies size S or M (Seny or Tena brands), some children use children size nappies (up to 30 kg)
-- Disposable bed pads (90x60 or bigger), wet wipes
-- Hygiene care products for bed ridden patients (nappy creams, gels for washing and shampoos)
-- Food – both general (pureed baby food and formula) and specialized (protein mixes, gluten and dairy free products), juices, fruits
-- General food – for both mothers and children.  Some of the children are able to eat basic food if it is blended.
-- Physiotherapy - usually 10-14 days, requirements vary depending on diagnosis
-- Medicines - mothers have to find and order medications themselves – these are often not provided by the state
-- Basic sanitary hygiene products for mothers and their teenage daughters (sanitary pads, tampons)
-- Clothing and shoes
-- Wheelchairs and specialized care equipment (for example, loungers for bathtubs – to be able to give bath to a disabled teenager)
-- Basic white goods (most mothers cannot afford to buy even most basic kitchen appliances – they live with broken or very old electric equipment; often top of the list are small freezers, fridges, blenders, juicers, or multicooker
-- Notebooks and tablets/ipads - most children are bed ridden and one of the few things they can do is use technology to keep them stimulated.
-
-![Pushchair for Karolina]({{ "/assets/img/chair.jpg" | relative_url }})
-
-A padded pushchair which is large enough for [Karolina]({{ "/families/karolina" | relative_url }}) is needed.  This
-"dream" pushchair is around £800, a price unimaginable for Karolina’s mom
