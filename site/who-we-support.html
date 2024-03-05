@@ -85,7 +85,6 @@ permalink: /people-we-support/
   = default_paths | where_exp:"path", "path contains 'families'" -%} {%- for
   path in page_paths -%} {%- assign my_page = site.pages | where: "path", path |
   first -%} {%- if my_page.title -%}
-  <!-- Nav tabs -->
   <li class="nav-item" role="presentation">
     <button
       class="nav-link {% if forloop.first %}active{% endif %}"
@@ -108,14 +107,13 @@ permalink: /people-we-support/
   = default_paths | where_exp:"path", "path contains 'families'" -%} {%- for
   path in page_paths -%} {%- assign my_page = site.pages | where: "path", path |
   first -%} {%- if my_page.title -%}
-  <!-- Tab panes -->
   <div
     class="tab-pane {% if forloop.first %}active{% endif %} p-3"
     id="{{my_page.title}}"
     role="tabpanel"
     aria-labelledby="{{my_page.title}}-tab"
   >
-    {{my_page.content}}
+    {{ my_page.content }}
   </div>
   {%- endif -%} {%- endfor -%}
 </div>
