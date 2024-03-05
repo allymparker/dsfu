@@ -1,0 +1,121 @@
+---
+layout: page
+title: The people we support
+permalink: /people-we-support/
+---
+
+<p class="lead">
+  Direct Support for Ukraine is working with Yuliya now. With your donations we
+  hope to be able to widen our support to others like her.
+</p>
+
+<!-- todo: image -->
+<div class="row align-items-start g-5 py-5">
+  <div class="col-4">
+    <img
+      class="object-fit-cover h-100 w-100"
+      src="{{'assets/img/yuliya.jpg' | relative_url}}"
+      alt="Yuliya"
+    />
+  </div>
+  <div class="col">
+    <h4>YULIYA IN KYIV</h4>
+    <p class="lead">
+      Caring for children and young people with special needs who cannot flee
+      the war.
+    </p>
+    <strong>An Introduction from Nataliya</strong>
+    <p>
+      Yuliya has been supporting children and young adults with very special
+      needs in Ukraine for several years now. Their life has always been
+      difficult, but current war made things almost impossible (how can a single
+      mum move a 14 year old bed ridden boy to a bomb shelter on short notice?).
+    </p>
+    <p>
+      The other day we were having a late evening call (she had spent whole day
+      trying to find adult nappies in different humanitarian aid centres – all
+      to no avail) and she promised to write more about “her” children later
+      after the conversation (I do notice the tenderness in her voice as she
+      says "her"). Late at night, I get a brief message that there were more
+      rockets flying by Yuliya’s house and she had to organize a sleeping space
+      for herself and her daughter in the corridor.
+    </p>
+    <p>
+      Next day, despite broken sleep, she sends me a long list of needs of
+      families she supports… and now it is my turn to loose sleep… because of
+      everything these families are going through.
+    </p>
+    <p>I hope we can help.</p>
+  </div>
+</div>
+<div class="row align-items-start g-5 py-5">
+  <div class="col-4">
+    <img
+      class="object-fit-cover h-100 w-100"
+      src="{{ 'assets/img/yuliya-1.jpg' | relative_url }}"
+      alt="Supplies"
+    />
+  </div>
+  <div class="col">
+    <p>
+      Yuliya Lamash is a volunteer supporting almost 60 children and young
+      adults with severe disabilities who grow up in single parent households.
+      These 6- to 19-year-olds suffer a number of medical conditions such as
+      cerebral palsy, epilepsy and genetic disorders. Almost all the children
+      are bed ridden, need nappies every day, eat blended or specialized food,
+      some of them also need a gluten free or a dairy free diet. The majority of
+      them need medications to support them, physiotherapy and everyday care
+      help as they cannot look after themselves. Many of these children are
+      behind their peers in physical development, their weight and height are
+      well below the average age standards. In all but one family, fathers are
+      not present (mothers are raising children on their own).
+    </p>
+    <p>
+      One impact of the war has been that sponsors and other funding sources are
+      no longer available. She needs our support to be able to buy the essential
+      things the children need such as nappies, medicines, special nutritional
+      foods and clothing.
+    </p>
+  </div>
+</div>
+
+<h2>The families Yuliya supports</h2>
+<ul class="nav nav-tabs" id="families" role="tablist">
+  {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths
+  = default_paths | where_exp:"path", "path contains 'families'" -%} {%- for
+  path in page_paths -%} {%- assign my_page = site.pages | where: "path", path |
+  first -%} {%- if my_page.title -%}
+  <!-- Nav tabs -->
+  <li class="nav-item" role="presentation">
+    <button
+      class="nav-link {% if forloop.first %}active{% endif %}"
+      id="{{my_page.title}}-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#{{my_page.title}}"
+      type="button"
+      role="tab"
+      aria-controls="{{my_page.title}}"
+      aria-selected="{{forloop.first}}"
+    >
+      {{my_page.title}}
+    </button>
+  </li>
+
+  {%- endif -%} {%- endfor -%}
+</ul>
+<div class="tab-content">
+  {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths
+  = default_paths | where_exp:"path", "path contains 'families'" -%} {%- for
+  path in page_paths -%} {%- assign my_page = site.pages | where: "path", path |
+  first -%} {%- if my_page.title -%}
+  <!-- Tab panes -->
+  <div
+    class="tab-pane {% if forloop.first %}active{% endif %} p-3"
+    id="{{my_page.title}}"
+    role="tabpanel"
+    aria-labelledby="{{my_page.title}}-tab"
+  >
+    {{my_page.content}}
+  </div>
+  {%- endif -%} {%- endfor -%}
+</div>

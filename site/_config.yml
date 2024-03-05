@@ -33,7 +33,7 @@ plugins:
 
 header_pages:
   - what-we-do.html
-  - who-we-support.markdown
+  - who-we-support.html
   - about-us.markdown
   - donate.html
   - contact.html
